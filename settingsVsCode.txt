@@ -62,15 +62,15 @@
       "strings": "#fff",
       "textMateRules": [
         {
-          "settings": {
-            "fontStyle": "italic"
-          },
           "scope": [
             "constant", //String, Number, Boolean…, this, super
             "entity.name.type.class", //class names
             "keyword", //import, export, return…
             "storage.type.class.js", //class keyword
           ],
+          "settings": {
+            "fontStyle": "italic"
+          },
         },
         {
           "scope": [
@@ -80,7 +80,10 @@
             "invalid",
             "keyword.operator",
             "keyword.other.unit.px.css"
-          ]
+          ],
+          "settings": {
+            "fontStyle": ""
+          },
         }
       ],
       "types": "#87ff6e",
@@ -100,13 +103,12 @@
   "editor.fontFamily": "Fira Code",
   "editor.fontLigatures": true,
   "editor.fontSize": 12,
-  "editor.formatOnSave": false,
+  "editor.formatOnSave": true,
   "editor.lineHeight": 21,
   "editor.parameterHints.enabled": true,
   "editor.renderLineHighlight": "all",
   "editor.rulers": [
-    110,
-    155
+    110
   ],
   "editor.suggestSelection": "first",
   "editor.tabSize": 3,
@@ -149,7 +151,7 @@
 
   // Config files and documents
   "files.autoSave": "afterDelay",
-  "files.autoSaveDelay": 30000,
+  "files.autoSaveDelay": 100000,
   "files.insertFinalNewline": false,
   "files.simpleDialog.enable": true,
   "files.trimFinalNewlines": true,
@@ -252,13 +254,12 @@
   // Config Prettier.config.js
   "prettier.arrowParens": "always",
   "prettier.bracketSpacing": true, // Space in the brackets
-  "prettier.endOfLine": "crlf", // Format line
   "prettier.htmlWhitespaceSensitivity": "css", // Space-sensitive in html
   "prettier.jsxBracketSameLine": false, // Brackets break line
   "prettier.jsxSingleQuote": true,
   "prettier.packageManager": "yarn",
   "prettier.semi": true, // Semicolons in the final line
-  "prettier.printWidth": 80, // Width of the line code
+  "prettier.printWidth": 110, // Width of the line code
   "prettier.singleQuote": true,
   "prettier.tabWidth": 3, // Spaces in tabs
   "prettier.trailingComma": "es5",
@@ -268,20 +269,18 @@
   "showGitMetrics": true,
 
   // Config Terminal integrated
-  "terminal.integrated.confirmOnExit": true,
+  "terminal.integrated.confirmOnExit": false,
   "terminal.integrated.fontSize": 12,
   "terminal.integrated.letterSpacing": 1,
   "terminal.integrated.lineHeight": 1,
   "terminal.integrated.shell.linux": "/bin/zsh",
   "terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe",
+  "terminal.integrated.fontFamily": "Fira Code",
 
   "typescript.tsserver.log": "normal",
   "typescript.updateImportsOnFileMove.enabled": "always",
 
-  "vsintellicode.modify.editor.suggestSelection": "enabled",
-  "vsintellicode.typescript.completionsEnabled": true,
-
-  "window.zoomLevel": -0.2,
+  "window.zoomLevel": -1,
 
   //Config Structure VsCode
   "workbench.activityBar.visible": true,
@@ -331,5 +330,28 @@
   },
   "workbench.settings.editor": "json",
   "workbench.startupEditor": "none", // While open program
-  "workbench.tree.indent": 10
+  "workbench.tree.indent": 10,
+  "cSpell.userWords": [
+    "Interesse",
+    "Palavras",
+    "Título",
+    "autores",
+    "chave",
+    "cifrado",
+    "livros",
+    "numero",
+    "receber",
+    "serie"
+  ],
+  "[php]": {
+    "editor.autoIndent": "advanced",
+    "editor.defaultFormatter": "bmewburn.vscode-intelephense-client",
+    "editor.detectIndentation": true,
+    "editor.trimAutoWhitespace": true
+  },
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "diffEditor.ignoreTrimWhitespace": false,
+  "todo-tree.tree.showScanModeButton": false,
+  "C_Cpp.updateChannel": "Insiders",
+  "yaml.format.printWidth": 110
 }
